@@ -1,0 +1,333 @@
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Variables */
+:root {
+    --primary-color: #00ACC1;
+    --dark-bg: #1a1a1a;
+    --darker-bg: #0f0f0f;
+    --text-light: #ffffff;
+    --text-gray: #b0b0b0;
+}
+
+/* Reset y Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .row {
+    flex-wrap: nowrap;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--darker-bg);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 3rem;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(26, 26, 26, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+header {
+    width: 100%;
+    position: relative;
+    min-height: 114vh;
+    padding-top: 120px;
+}
+
+#hero .redes-sociales {
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+#hero .redes-sociales a {
+    display: block;
+    margin: 35px 0;
+    font-size: 38px;
+    color: var(--white-color);
+    border: 3px solid var(--primary-color);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .redes-sociales a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#hero .redes-sociales a:hover::before {
+    width: 200%;
+    height: 200%;
+}
+
+#hero .redes-sociales a:hover {
+    color: var(--dark-bg);
+    border-color: var(--primary-color);
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0, 124, 145, 0.5);
+}
+
+#hero .file1 {
+    position: relative;
+    padding: 0 60px 60px 60px;
+    margin: 0 90px 0 30px;
+}
+
+/* Decorative circles mejorados */
+.decorative-circle {
+    width: 30px;
+    height: 30px;
+    border: 4px solid var(--primary-color);
+    position: absolute;
+    opacity: 0.7;
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(0, 124, 145, 0.4);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+.circle-1 {
+    top: 120px;
+    right: 120px;
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    bottom: 10px;
+    left: 150px;
+    animation-delay: 1s;
+}
+
+.circle-3 {
+    bottom: -160px;
+    left: 500px;
+    animation-delay: 1s;
+}
+
+#hero h2 {
+    font-size: var(--fs-tittle3);
+    color: var(--white-color);
+    margin: 40px 0 0 150px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#hero hr {
+    margin: 5px 70% 40px 80px;
+    border: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--white-color), transparent);
+    animation: expandLine 1.5s ease-out;
+}
+
+@keyframes expandLine {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+#pHero1 {
+    font-family: 'Martel', serif;
+    font-size: 30px;
+    color: var(--white-color);
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    font-weight: 100;
+    text-shadow: 0 0 20px rgba(0, 124, 145, 0.5);
+}
+
+#pHero2 {
+    font-family: 'Martel', serif;
+    font-size: 32px;
+    color: var(--white-color);
+    position: absolute;
+    left: 440px;
+    bottom: -20px;
+    font-weight: 600;
+}
+
+#hero span {
+    font-size: 50px;
+    color: var(--primary-color);
+    text-shadow: 0 0 30px rgba(0, 124, 145, 0.6);
+}
+
+#hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 92px;
+    font-weight: 700;
+    color: #007C91;
+    letter-spacing: 2px;
+    padding: 60px 0 10px 100px;
+    text-shadow: 0 0 40px rgba(0, 124, 145, 0.4);
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 40px rgba(0, 124, 145, 0.4);
+    }
+
+    to {
+        text-shadow: 0 0 60px rgba(0, 124, 145, 0.7);
+    }
+}
+
+/* Hero Image mejorado */
+.espImagen {
+    position: relative;
+    padding: 0;
+}
+
+.espImagen::before {
+    content: "";
+    width: 60px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--primary-color), rgba(0, 124, 145, 0.6));
+    position: absolute;
+    top: 170px;
+    right: 600px;
+    z-index: 0;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(0, 124, 145, 0.5);
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.espImagen::after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, var(--primary-color), rgba(0, 124, 145, 0.7));
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    z-index: 0;
+    border-radius: 20px;
+    animation: rotate 20s linear infinite;
+    box-shadow: 0 10px 50px rgba(0, 124, 145, 0.4);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#imagenF {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    right: 220px;
+    top: 130px;
+    background-color: transparent;
+    filter: drop-shadow(0 10px 30px rgba(0, 124, 145, 0.3));
+}
+
+#imagenF2 {
+    position: absolute;
+    width: 280px;
+    height: 460px;
+    right: 170px;
+    top: 60px;
+    background-color: transparent;
+    filter: drop-shadow(0 10px 30px rgba(0, 124, 145, 0.3));
+}
+
+#imagenMia {
+    position: absolute;
+    width: 470px;
+    z-index: 2;
+    background-color: transparent;
+    top: 30px;
+    right: 190px;
+    bottom: -100px;
+    filter: drop-shadow(0 15px 40px rgba(0, 124, 145, 0.4));
+    transition: all 0.3s ease;
+}
+
+#imagenMia:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 20px 50px rgba(0, 124, 145, 0.6));
+}
+
