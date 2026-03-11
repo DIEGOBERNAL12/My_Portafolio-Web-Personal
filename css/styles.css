@@ -78,11 +78,11 @@ header {
 #hero .redes-sociales a {
     display: block;
     margin: 35px 0;
-    font-size: 38px;
+    font-size: 32px;
     color: var(--white-color);
     border: 3px solid var(--primary-color);
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -337,7 +337,7 @@ header {
 
 /* Profile Section */
 #profile {
-    padding: 5rem 0;
+    padding: 10rem 0;
     background-color: var(--dark-bg);
     position: relative;
     height: 100vh;
@@ -430,7 +430,7 @@ header {
 
 .shape-1 {
     top: 20px;
-    right: 20px;
+    right: 50px;
 }
 
 .shape-2 {
@@ -441,7 +441,7 @@ header {
 
 /* Skills Section */
 #skills {
-    padding: 5rem 0;
+    padding: 10rem 0;
     background-color: var(--darker-bg);
     text-align: center;
     height: 100vh;
@@ -600,7 +600,7 @@ header {
 
 /* Experience Section */
 #experiences {
-    padding: 5rem 0;
+    padding: 10rem 0;
     background-color: var(--darker-bg);
     height: 100vh;
     scroll-snap-align: start;
